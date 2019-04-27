@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p>Sorry. There are no results for {{ query }} </p>
+        <p>Possible reasons are:</p>
+        <ul>
+            <li>Title with this or similar name doesn't exist.</li>
+            <li>Query is not specific enough, for instance, `Avengers` won't work
+                while `Avengers:` would return results for `Avengers: Age of Ultron`.
+                This limitation could be fixed if needed.
+            </li>
+            <li>This title was excluded while preparing dataset for training 
+                    beacuse of the ratings cutoff - we use only titles with have at 
+                    least 100 recommendations (the reason was to get the best 
+                    results from the recommendation engine).
+            </li>
+        </ul>
+    </body>
+</html>
